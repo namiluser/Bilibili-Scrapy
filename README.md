@@ -8,7 +8,7 @@ Scrapy文档
 在MdtvSpider类中，基于selenium技术创建了一个浏览器对象（注意，本项目使用的是114版本的Chrome浏览器驱动程序，如果在本机上运行项目时本机上的Chrome浏览器版本不兼容，可能导致项目无法正常启动）。还设置了相关参数来防止检测，处理SSL证书错误问题，以及将加载策略设置为“none”。
 
 
-start_urls设置为"https://www.bilibili.com/v/douga/mad"，提取器将提取此页面中所有视频的URL。回调函数设置为parse_video，parse_video函数使用基于Xpath的解析方法来获取每个视频的名称、点赞量、播放量、弹幕数、投币数、收藏量和转发量。然后将解析的数据提交到管道DtvPipeline中。
+start_urls设置为 https://www.bilibili.com/v/douga/mad ，提取器将提取此页面中所有视频的URL。回调函数设置为parse_video，parse_video函数使用基于Xpath的解析方法来获取每个视频的名称、点赞量、播放量、弹幕数、投币数、收藏量和转发量。然后将解析的数据提交到管道DtvPipeline中。
 
 
 项（Items）
